@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actualización de Datos | Errepar</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+    #fecha .form-control{
+        font-size: 9px;
+    }
+    </style>
+</head>
+<body onload="checkBrowser()">
+    <div class="container">
+        <!-- DIV 1 - HEADER -->
+        <img class="logo" src="img/header.jpg" alt="Logo Errepar">
+
+        <!-- DIV 2 - MAIN -->
+        <div class="div-2">
+            <!-- DIV 3 -->
+            <div class="img-desktop" style="background-color: #e4e4e6;">
+                <!-- IMG -->
+                <div id="contenedor-imagen" class="contenedor-imagen"><!--Andres-->
+                    <img class="img-mb" src="img/Img.jpg" alt="imagen ilustrativa">
+                    <div class="titulo-foto" style="position: relative;    transform: none;">
+                        <p>te invitamos</p>
+                        <p>actualizar tus datos</p>
+                        <p><b>de manera simple y rápida</b></p>
+                    </div>
+                    <div class="main-padre">
+                        <div class="main">
+
+                            <div class="form">
+                                <div class="div-form">
+                                    <label for="suscriptor">Nº de suscriptor</label>
+                                    <input type="number" class="form-control" id="suscriptor" required>
+                                    <div class="validacion">
+                                        <p>* Debe ingresar un número correcto</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="div-form">
+                                    <label for="nombreYapellido">Nombre y Apellido</label>
+                                    <input type="text" class="form-control" id="nombreYapellido" required>
+                                    <div class="validacion">
+                                        <p>* Este campo es obligatorio</p>
+                                    </div>
+                                </div>
+        
+                                <div class="div-form">
+                                    <label for="cuit">cuit/cuil</label>
+                                    <input type="number" class="form-control" id="cuit" required>
+                                    <div class="validacion">
+                                        <p>* Ingrese un número CUIT/CUIL correcto</p>
+                                    </div>
+                                </div>
+        
+                                <div class="div-form" id="fecha">
+                                    <label for="fecha">fecha</label>
+                                    <div class="fecha-triptico">
+                                        <label for="nac-dia" class="inline-block">
+                                            <div class="select-costum">
+                                                <select id="nac-dia" class="form-control borde-izquierdo" required>
+                                                    <option selected>1</option>
+                                                    <option>2</option>
+                                                    <option>[...]</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                                <img src="img/Flecha-01.svg" class="flecha">
+                                            </div>
+                                        </label>
+                                        
+                                        <label for="nac-mes" class="inline-block">
+                                            <div class="select-costum">
+                                                <select id="nac-mes" class="form-control sin-borde" required>
+                                                    <option selected>ENERO</option>
+                                                    <option>FEBRERO</option>
+                                                    <option>[...]</option>
+                                                    <option>NOVIEMBRE</option>
+                                                    <option>DICIEMBRE</option>
+                                                </select>
+                                                <img src="img/Flecha-01.svg" class="flecha">
+                                            </div>
+                                        </label>
+        
+                                        <label for="nac-año" class="inline-block">
+                                            <div class="select-costum">
+                                                <select id="nac-año" class="form-control borde-derecho" required>
+                                                    <option selected>2002</option>
+                                                    <option>2001</option>
+                                                    <option>[...]</option>
+                                                    <option>1941</option>
+                                                    <option>1940</option>
+                                                    <!-- Chamuye las fechas porque no tengo idea de qué quiere mkt -->
+                                                </select>
+                                                <img src="img/Flecha-01.svg" class="flecha">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="div-form">
+                                    <label for="mail">e-mail</label>
+                                    <input type="email" class="form-control" id="mail" required>
+                                    <div class="validacion">
+                                        <p>* Este campo es obligatorio</p>
+                                    </div>
+                                </div>
+        
+                                <div class="div-form">
+                                    <label for="consulta">¿ingresa habitualmente al área de suscriptores?</label>
+                                    <div class="select-costum">
+                                        <select id="consulta" class="form-control" required>
+                                            <option disabled selected hidden>Elija una opción...</option>
+                                            <option>SI</option>
+                                            <option>NO</option>
+                                        </select>
+                                        <img src="img/Flecha-01.svg" class="flecha" style="right: 20px;">
+                                    </div>
+                                    <div class="validacion">
+                                        <p>* Este campo es obligatorio</p>
+                                    </div>
+                                </div>
+                                <span class="div-form span" style="margin-top: 0.5em;">
+                                    <button type="button" class="button">enviar</button>
+                                </span>
+                                
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                            
+            </div><!-- FIN DIV 3 -->
+
+            <!-- DIV 4 - Footer-->
+            <div class="footer">
+                <img src="img/header-3.jpg" alt="Logo errepar" class="header-pc">
+                <div class="footer-pc">
+                    <div class="footer-line">Centro de Atención al Cliente</div>
+                    <div class="footer-line">
+                        <span id="tel" class="tel inline-block">(011) 4370 - 2002</span>
+                    </div>
+                    <div class="footer-line">
+                        <span id="what" class="what inline-block">+ 54 11 2234 - 1000</span>
+                    </div>
+                    <div class="footer-line">
+                        <span id="mail" class="mail inline-block">clientes@errepar.com</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIN DIV 2 - MAIN -->
+
+        <!-- texto final -->
+        <div class="bases">
+            <p>Todos los contenidos y beneficios están sujetos a los términos estipulados
+                en www.errepar.com. Las condiciones de acceso, vigencia y extensión de los mismos están sujetas a modificación y/o renovación por parte de Errepar S.A.
+            </p>
+        </div>
+    <!-- FIN .CONTAINER  -->
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
